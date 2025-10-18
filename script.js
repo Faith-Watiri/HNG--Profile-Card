@@ -1,19 +1,22 @@
 function updateTime() {
-    const timespan = document.getElementById("user-time");
-    timespan.textContent = Date.now();
+    const timeEl = document.getElementById("user-time");
+  
+    timeEl.textContent = Date.now();
 }
 
-setInterval(updateTime, 1000);
+
 updateTime();
+setInterval(updateTime, 1000);
 
 
-doucument.getElementById("avatar-upload").addEventListener("change", (event) =>{
+
+document.getElementById("avatar-upload").addEventListener("change", (event) =>{
  const file = event.target.files[0];
- if (file)
+ if (!file) return;
     {
         const reader = new FileReader();
-        reader.onload = function (e) {
-            doucument.getElementById("avatar").src = e.target.result;
+        reader.onload =  (e) => {
+            document.getElementById("avatar").src = e.target.result;
         };
 
         reader.readAsDataURL(file);
