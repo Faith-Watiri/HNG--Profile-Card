@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faith Wairimu | Profile Card</title>
+<link  rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main>
+    <article data-testid="test-profile-card"  class="test-profile-card">
+        <header>
+            <h2 data-testid="test-user-name">Faith Wairimu</h2>
+        </header>
+
+        <figure>
+            <img id="avatar" src="https://cdn-icons-png.flaticon.com/512/847/847969.png"
+            alt="Profile picture of Faith Wairimu"
+            data-testid="test-user-avatar"/>
+
+            <figcaption>Upload a Profile Picture</figcaption>
+            <input
+            type="file"
+            id="avatar-upload"
+            accept="image/*"/>
+        </figure>
+
+        <p data-testid="test-user-bio">
+            I'm a passionate Frontend Developer and Software Engineer with interests in building clean, responsive, and accessible web experiences.
+        </p>
+
+        <p>
+            Current Time (ms):
+            <span data-testid="test-user-time" id="user-time"></span>
+        </p>
+
+        <nav data-testid="test-user-social-links" aria-label="Social Links">
+            <ul>
+                <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a></li>
+                <li><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+                <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a></li>
+            </ul>
+            </nav>
+
+            <section>
+                <h3>Hobbies</h3>
+                <ul data-testid="test-user-hobbies">
+                    <li>Coding</li>
+                    <li>Travelling</li>
+                    <li>Crotcheting</li>
+                    <li>Watching</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Dislikes</h3>
+                <ul data-testid="test-user-dislikes">
+                    <li>False Promises</li>
+                    <li>Procrastination</li>
+                    <li>Dirty environs</li>
+                    <li>Micromanagement</li>
+                </ul>
+            </section>
+            </article>
+            </main>
+            
+    <script src="script.js"></script>
+</body>
+</html>
