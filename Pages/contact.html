@@ -4,42 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link  rel="stylesheet" href="style.css" />
+    <link  rel="stylesheet" href="../style.css">
 </head>
 <body>
 <h1>Contact Us </h1>
 
 <nav>
 <ul>
+<li><a href="../index.html">Home</a></li>
 <li><a href="about.html">About Me</a></li>
 <li><a href="contact.html">Contact Us</a></li>
 </ul>
 </nav>
-
 <main>
 
-<form data-testid ="test-contact-us"  class="test-contact-us">
-<label for="name">Full name</label>
-<input type="text" id="name" name="name" data-testid="test-contact-name">
-<p id="name" data-testid="test-contact-name" class="name"></p>
+<form id="contact-form" data-testid="test-contact-us">
+  <label for="name">Full Name</label>
+  <input type="text" id="name" name="name" data-testid="test-contact-name">
+  <p id="error-name" class="error"></p>
 
-<label for="email">Email</label>
-<input type="text" id="email"  name="email" data-testid="test-contact-email">
-<p id="email" data-testid="test-contact-email" class="email"></p>
+  <label for="email">Email</label>
+  <input type="text" id="email" name="email" data-testid="test-contact-email">
+  <p id="error-email" class="error"></p>
 
-<label for="subject">Subject</label>
-<input type="text" id="subject" name="subject" data-testid="test-contact-subject">
-<p id="subject" data-testid="subject" class="subject"></p>
+  <label for="subject">Subject</label>
+  <input type="text" id="subject" name="subject" data-testid="test-contact-subject">
+  <p id="error-subject" class="error"></p>
 
+  <label for="message">Message</label>
+  <textarea id="message" name="message" data-testid="test-contact-message"></textarea>
+  <p id="error-message" class="error"></p>
 
-<label for="message">Message</label>
-<textarea type="text" id="message" name="message" data-testid="test-contact-message" max-length="150" rows="3"></textarea>
-<p id="message" data-testid="test-contact-message" class="message"></p>
-
-<button type="submit" data-testid="test-contact-submit">Send Message</button>
-<p id="success" data-testid="test-contact-success" class="success"></p>
-
+  <button type="submit" data-testid="test-contact-submit">Send Message</button>
+  <p id="success" data-testid="test-contact-success" class="success"></p>
 </form>
-</main>    
+
+
+
+</main>   
+
+<script src="../script.js"></script>
 </body>
 </html>
